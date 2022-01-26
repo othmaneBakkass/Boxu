@@ -1,0 +1,389 @@
+* {
+    color: white;
+    font-weight: 400;
+}
+
+.nav-active {
+    color: #43A9DF;
+}
+
+html {
+    height: 100%;
+}
+
+
+.rankers {
+    font-family: 'Carter One', cursive;
+    margin: 5rem 0;
+    font-size: 2.5rem;
+}
+
+
+
+body {
+    background: #006E9D;
+    background: linear-gradient(179.97deg, #006E9D 0.03%, #3CD2EF 99.97%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    background: none;
+}
+
+.place-holder {
+    width: 100vw;
+    height: 20vh;
+}
+
+.page-links {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.page-links ul {
+    display: flex;
+}
+
+.page-links ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.page-links ul li a {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2.5px;
+}
+
+.order-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.order-hero-img img {
+    width: 100%;
+    transition: transform 7s ease-out;
+    animation: small-box-animation 7s infinite;
+}
+
+.order-hero-title h1 {
+    font-size: 3.5rem;
+    font-family: 'Carter One', cursive;
+    margin-bottom: 5rem;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.search-bar-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 55%;
+    margin-bottom: 5rem;
+
+}
+
+.search-bar {
+    width: 80%;
+    height: 3.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-right: 2px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: #fff;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2.5px;
+}
+
+.search-btn {
+    width: 20%;
+    height: 3.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-left: 2px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2.5px;
+    transition: all .2s ease-in;
+}
+
+.mini-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reset-btn {
+    height: 3.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.reset-btn a {
+    font-size: 1.3rem;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2.5px;
+    padding: 3rem;
+}
+
+.reset-btn a:hover {
+    color: #447B8A;
+}
+
+.search-btn:hover, .reset-btn:hover {
+    color: #447B8A;
+    background-color: #fff;
+
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+::-ms-placeholder {
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(142.47deg, #00C9FF 6.87%, #146981 102.25%);
+    box-shadow: -19px 33px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.card-title {
+    position: absolute;
+    top: 10%;
+}
+
+.card-title h2 {
+    font-size: 2rem;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2.5px;
+}
+
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-info p {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-right: 1rem;
+}
+
+.product-btn {
+    width: 9rem;
+    height: 3.5rem;
+    background: #447B8A;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    transition: all .2s ease-in;
+    border-radius: 30px;
+    margin-left: 1rem;
+
+}
+
+.product-btn:hover {
+    color: #447B8A;
+    background-color: #fff;
+
+}
+
+
+footer {
+    background: none;
+    position: relative;
+}
+
+.order-wave {
+    vertical-align: bottom;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+@media screen and (max-width: 1024px) {
+    .order-hero-title h1 {
+        text-align: center;
+    }
+
+    .search-bar-container form {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .search-bar {
+        width: 100%;
+        border: 3px solid white;
+        border-radius: 15px;
+        padding: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    .search-btn {
+        width: 30%;
+        height: 3.5rem;
+        background: none;
+        outline: none;
+        border: 3px solid white;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order-hero-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .rankers {
+        font-family: 'Carter One', cursive;
+        margin: 5rem 0;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .place-holder {
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .page-links ul li {
+        font-size: 1rem;
+    }
+
+    .order-hero-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-bar-container form {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .search-bar {
+        width: 100%;
+        border: 3px solid white;
+        border-radius: 15px;
+        font-size: 1rem;
+        padding: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    .search-btn {
+        width: 50%;
+        height: 3.5rem;
+        background: none;
+        outline: none;
+        border: 3px solid white;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    .card {
+        border-radius: 25px;
+        width: 90%;
+    }
+
+    .card-title h2 {
+        font-size: 1rem;
+        font-family: 'Carter One', cursive;
+        letter-spacing: 2.5px;
+    }
+
+    .card-img img {
+        width: 80%;
+    }
+
+    .card-info {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .card-info p {
+        margin-right: 0rem;
+        margin: 1rem;
+    }
+
+    .product-btn {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        height: 2.5rem;
+
+    }
+}

@@ -1,0 +1,384 @@
+* {
+    color: white;
+    font-weight: 400;
+}
+
+.nav-active {
+    color: #FF3701;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #FF7800;
+    background: linear-gradient(0deg, #ff4e01 0.6%, #FF7800 58.58%, #FFB100 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    background: none;
+}
+
+.place-holder {
+    width: 100vw;
+    height: 20vh;
+}
+
+.page-links {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.page-links ul {
+    display: flex;
+}
+
+.page-links ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.page-links ul li a {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2.5px;
+}
+
+.hero {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 6rem;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+.questions {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.questions-title {
+    margin: 5rem 0;
+    align-self: flex-start;
+}
+
+.questions-title h2 {
+    font-size: 3.5rem;
+    font-family: 'Carter One', cursive;
+    text-transform: capitalize;
+}
+
+.questions-content {
+    align-self: flex-start;
+}
+
+.questions-content ul {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+.questions-content ul li {
+    margin: 2rem 0;
+    list-style: disc;
+    text-transform: capitalize;
+
+
+}
+
+/*---------------Write-Reviews SECTION----------*/
+.write-order {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem auto;
+}
+
+.order-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-content, .order-field-1, .order-field-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.order-email-tag, #order-email, .message-tag, #message-box {
+    align-self: flex-start;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-family: 'Carter One', cursive;
+}
+
+#order-email, #message-box {
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+#order-img {
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+}
+
+#order-img-btn {
+    font-size: 1.3rem;
+    background: none;
+    color: #fff;
+    align-self: flex-start;
+    padding: 0.5rem 2rem;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-bottom: .5rem;
+    font-family: 'Carter One', cursive;
+    cursor: pointer;
+    transition: color .25s ease-in, background-color .25s ease-in;
+}
+
+#order-img-btn:hover {
+    color: #FF7800;
+    background-color: #fff;
+}
+
+.img-container {
+    width: 10rem;
+    align-self: flex-start;
+    margin: 1rem 0;
+}
+
+#order-email {
+    width: 40%;
+    height: 2.5rem;
+
+}
+
+#message-box {
+    width: 100%;
+    height: 30rem;
+}
+
+.order-btn-container {
+    align-self: flex-end;
+}
+
+.submit-order {
+    margin: 3.5rem;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #FF7800;
+    transition: all .3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1.5rem;
+    padding: 1rem 3.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-order:hover {
+    background-color: #fff;
+    color: #FF7800;
+    transform: scale(1.1);
+}
+
+
+/*---------------Wrtie-Reviews SECTION----------*/
+/*---------------footer SECTION----------*/
+footer {
+    background: transparent;
+    position: relative;
+}
+
+.footer-wave {
+    vertical-align: baseline;
+    width: 100vw;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/*---------------footer SECTION----------*/
+/*----------------------------------MEDIA QUERY---------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .hero-img {
+        width: 70%;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .questions {
+        width: 70%;
+    }
+
+    .questions-title {
+        margin: 4rem 0;
+    }
+
+    .questions-title h2 {
+        font-size: 2rem;
+    }
+
+    .questions-content ul {
+        font-size: 1.5rem;
+    }
+
+    .questions-content ul li {
+        margin: 2rem 0;
+    }
+
+    .write-order {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-img {
+        width: 80%;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .questions {
+        width: 80%;
+    }
+
+    .questions-title {
+        margin: 4rem 0;
+    }
+
+    .questions-title h2 {
+        font-size: 2rem;
+    }
+
+    .questions-content ul {
+        font-size: 1.5rem;
+    }
+
+    .questions-content ul li {
+        margin: 2rem 0;
+    }
+
+    .write-order {
+        width: 80%;
+    }
+
+    #order-email {
+        width: 100%;
+    }
+
+    .order-btn-container {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .page-links ul li {
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .questions {
+        width: 80%;
+    }
+
+    .questions-title {
+        margin: 5rem 0 4rem 0;
+    }
+
+    .questions-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .questions-content ul {
+        font-size: 1rem;
+    }
+
+    .questions-content ul li {
+        margin: 2rem 0;
+    }
+
+    .write-order {
+        width: 80%;
+    }
+
+    #order-email {
+        width: 100%;
+    }
+
+    .order-btn-container {
+        align-self: center;
+    }
+
+    .order-email-tag, #order-email, .message-tag, #message-box {
+        align-self: flex-start;
+        margin: 1rem 0;
+        font-size: 1rem;
+        font-family: 'Carter One', cursive;
+    }
+
+    .submit-order {
+        font-size: 1rem;
+    }
+
+}
+
+/*----------------------------------MEDIA QUERY---------------------------------*/

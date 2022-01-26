@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #FFB100 0%, #FF7800 100%);
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.main-top {
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.main-top h1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: white;
+    font-size: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.main-bottom, .main-top {
+    position: relative;
+
+}
+
+.main-bottom {
+    text-align: center;
+}
+
+.main-bottom h1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+.top-wave, .bottom-wave {
+    width: 100vw;
+    vertical-align: bottom;
+    user-select: none;
+}
+
+
+
+.login-card {
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 10%;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.title {
+    margin: 3rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    justify-self: flex-start;
+    color: #fff;
+    margin-top: 5rem;
+    font-family: 'Archivo Black', sans-serif;
+
+
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+    letter-spacing: 2.5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+    margin-left: 3.5rem;
+    font-weight: 500;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.user, .password {
+    width: 80%;
+    height: 3.5rem;
+    align-self: flex-start;
+    margin-left: 3.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.116);
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+.password {
+    margin-bottom: 2rem;
+}
+
+.btn-container {
+    margin: 2rem 0;
+    align-self: flex-end;
+    margin-right: 14%;
+}
+
+.btn {
+    margin-top: 0.5rem;
+    height: 3.5rem;
+    width: 13rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition: all .58s ease-in;
+    background-color: #FD5309;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2.5px;
+
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #FD5309;
+
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    .login-card {
+        width: 60vw;
+    }
+
+    .main-top h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .login-card {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin: 3rem 0;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 5rem;
+        font-family: 'Archivo Black', sans-serif;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
+        margin: 2.5rem 0;
+        margin-left: 3.5rem;
+        font-weight: 500;
+        align-self: flex-start;
+        color: #fff;
+    }
+
+    .btn {
+        margin-top: 3.5rem;
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        transition: all .58s ease-in;
+        background-color: #FD5309;
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'Archivo Black', sans-serif;
+        letter-spacing: 2.5px;
+    }
+}
+
+
+@media screen and (max-width: 553px) {
+    .main-top h1 {
+        font-size: 3.5rem;
+    }
+
+    .login-card {
+        width: 100vw;
+        height: 100%;
+        border-radius: 0px;
+        backdrop-filter: blur(30px);
+        box-shadow: none;
+    }
+
+    .title {
+        margin: 3rem 0;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        justify-self: flex-start;
+        color: #fff;
+        margin-top: 5rem;
+        font-family: 'Archivo Black', sans-serif;
+
+
+    }
+
+    .card-content h3 {
+        margin-left: 0;
+        align-self: center;
+    }
+
+
+    .user, .password {
+        width: 80%;
+        height: 3.5rem;
+        align-self: center;
+        margin-left: 0rem;
+        border-radius: 50px;
+        font-size: 1.5rem;
+    }
+
+    .btn-container {
+        margin: 2rem 0;
+        align-self: center;
+    }
+
+
+    .btn {
+        margin-top: 2.5rem;
+
+    }
+
+    .main-bottom h1 {
+        color: rgb(255, 255, 255, 0.6);
+        font-size: 1rem;
+    }
+
+}

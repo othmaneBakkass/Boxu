@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Fredoka+One&family=Rubik:wght@400;700&display=swap');
+
+* {
+    color: white;
+    font-weight: 400;
+}
+
+.nav-active {
+    color: #7313d3;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(45, 3, 59);
+    background: linear-gradient(180deg, rgba(45, 3, 59, 1) 0%, rgba(74, 24, 133, 1) 50%, rgba(112, 11, 138, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    background: none;
+}
+
+.place-holder {
+    width: 100vw;
+    height: 20vh;
+}
+
+.page-links {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.page-links ul {
+    display: flex;
+}
+
+.page-links ul li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.page-links ul li a {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2.5px;
+}
+
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offers-title {
+    font-size: 3.5rem;
+    font-family: 'Carter One', cursive;
+    margin: 10rem 0;
+}
+
+.offers-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.offers-img {
+    transition: transform 7s ease-out;
+    animation: small-box-animation 7s infinite;
+}
+
+.offers-img img {
+    width: 70%;
+}
+
+.offers-text-title {
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+}
+
+.offers-text p {
+    font-size: 2rem;
+    margin: .5rem 0 2rem;
+
+}
+
+.offers-mega {
+    background-clip: content-box;
+    background: -webkit-linear-gradient(90deg, #AB5A10 0%, #FAA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*---------------ORDER SECTION----------*/
+
+.check-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.check-out-title h2 {
+    font-size: 3.5rem;
+    font-family: 'Carter One', cursive;
+    margin: 10rem 0;
+}
+
+.check-out-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-info-1, .form-info-2, .form-info-3, .form-info-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width: 110%;
+    gap: 10%;
+}
+
+.form-info-1>div, .form-info-2>div, .form-info-3>div, .form-info-4>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.first-name-tag, .last-name-tag, .email-tag, .address-tag, .card-name-tag, .card-number-tag, .cvv-tag, .box-type-tag {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-family: 'Carter One', cursive;
+    margin-bottom: 1rem;
+}
+
+#first-name, #last-name, #email, #Address, #cardName, #cardNumber, #cvv, #typeBox {
+    width: 20rem;
+    height: 2.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+.form-btn {
+    margin-top: 3.5rem;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #7C56B1;
+    transition: all .3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-btn:hover {
+    background-color: #7C00FF;
+    transform: scale(1.1);
+}
+
+.form-btn a {
+    font-size: 1.5rem;
+    padding: 1rem 3.5rem;
+    color: white;
+}
+
+/*---------------ORDER SECTION----------*/
+/*---------------------------------------Reviews SECTION----------*/
+.reviews {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews-title h2 {
+    font-size: 3.5rem;
+    font-family: 'Carter One', cursive;
+    margin: 10rem 0;
+}
+
+.reviews-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(180deg, #851fda 0%, rgba(181, 129, 222, 0) 100%);
+    border-radius: 15px;
+    margin-bottom: 10rem;
+    width: 100%;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.card-title, .card-text {
+    align-self: flex-start;
+
+}
+
+.card-title h3 {
+    font-size: 2rem;
+    font-family: 'Carter One', cursive;
+    margin: 1.5rem 0 2rem 1.5rem;
+}
+
+.card-text p {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 1.5rem;
+}
+
+/*---------------Reviews SECTION----------*/
+/*---------------Write-Reviews SECTION----------*/
+.write-review {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-content, .review-field-1, .review-field-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.review-name-tag, #review-name, .message-tag, #message-box {
+    align-self: flex-start;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-family: 'Carter One', cursive;
+}
+
+#review-name, #message-box {
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+#review-name {
+    width: 50%;
+    height: 2.5rem;
+
+}
+
+#star_rating {
+    align-self: flex-start;
+    width: 50%;
+    color: white;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 15px;
+    font-family: 'Carter One';
+    letter-spacing: 1.5px;
+}
+
+#star_rating option {
+    color: black;
+}
+
+#message-box {
+    width: 100%;
+    height: 20rem;
+}
+
+.submit-review {
+    margin: 3.5rem;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #7C56B1;
+    transition: all .3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1.5rem;
+    padding: 1rem 3.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-review:hover {
+    background-color: #7C00FF;
+    transform: scale(1.1);
+}
+
+
+/*---------------Wrtie-Reviews SECTION----------*/
+/*---------------footer SECTION----------*/
+
+footer {
+    background: transparent;
+    position: relative;
+}
+
+.footer-content-sub {
+    position: absolute;
+    bottom: .5rem;
+    right: 50%;
+    transform: translate(50%);
+}
+
+/*--------------- footer SECTION----------*/
+
+/*-------------------- media-query------------------- */
+
+@media screen and (max-width: 1024px) {
+    .offers-img img {
+        width: 90%;
+    }
+
+    .offers-text-title {
+        text-align: center;
+    }
+
+    .offers-text p {
+        margin: 2.2rem 0 2.2rem;
+    }
+
+    .write-review {
+        width: 80%;
+    }
+
+    #review-name {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .form-info-1, .form-info-2, .form-info-3, .form-info-4 {
+        margin: 1rem;
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .first-name-tag, .last-name-tag, .email-tag, .address-tag, .card-name-tag, .card-number-tag, .cvv-tag, .box-type-tag {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #first-name, #last-name, #email, #Address, #cardName, #cardNumber, #cvv, #typeBox {
+        border-radius: 0px;
+        font-size: 1rem;
+        width: 25rem;
+    }
+
+    #review-name {
+        width: 100%;
+    }
+
+    #star_rating {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #review-name, #message-box {
+        border-radius: 0px;
+        font-size: 1rem;
+    }
+
+    .submit-review {
+        margin: 3.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0rem 2.5rem;
+    }
+
+
+    .form-btn {
+        height: 2.5rem;
+    }
+
+    .form-btn a {
+        font-size: 1rem;
+        padding: 0rem 2.5rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .footer-content div {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 426px) {
+    .place-holder {
+        height: 10vh;
+    }
+
+    .page-links {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 0rem;
+        margin-top: 5rem;
+    }
+
+    .page-links ul li {
+        font-size: 1rem;
+    }
+
+    .offers-title {
+        font-size: 1.5rem;
+        margin: 5rem 0;
+        text-align: center;
+    }
+
+    .offers-img img {
+        width: 90%;
+    }
+
+    .offers-text-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .offers-text p {
+        font-size: 1rem;
+        margin: 0.5rem 0 2rem;
+    }
+
+    .check-out-title h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    .form-info-1, .form-info-2, .form-info-3, .form-info-4 {
+        margin: 1rem;
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .first-name-tag, .last-name-tag, .email-tag, .address-tag, .card-name-tag, .card-number-tag, .cvv-tag, .box-type-tag {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #first-name, #last-name, #email, #Address, #cardName, #cardNumber, #cvv, #typeBox {
+        border-radius: 0px;
+        font-size: 1rem;
+    }
+
+    .card-title h3 {
+        font-size: 1rem;
+    }
+
+    .card-text p {
+        font-size: 1rem;
+    }
+
+    .reviews-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    .review-name-tag, #review-name, .message-tag, #message-box {
+        font-size: 1rem;
+    }
+
+    #first-name, #last-name, #email, #Address, #cardName, #cardNumber, #cvv, #typeBox {
+        border-radius: 0px;
+        font-size: 1rem;
+        width: 15rem;
+    }
+
+
+
+}

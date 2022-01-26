@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Fredoka+One&family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(0deg, #FF7800 0%, #FFB100 90.32%);
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*--------------navbar SECTION-------------*/
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 30;
+
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'fredoka one';
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: auto;
+    user-select: none;
+}
+
+.logo-drk {
+    color: black;
+}
+
+.nav-icon-group {
+    margin-left: auto;
+    position: relative;
+}
+
+.nav-icon-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: transform .5s ease-in;
+
+}
+
+.nav-icon-open:hover {
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-icon-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: transform .1s ease-out;
+}
+
+.nav-icon-close:hover {
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-hidden {
+    opacity: 0;
+    display: none;
+}
+
+.nav-icon-animation {
+    animation: nav-expand .7s ease-out;
+}
+
+@keyframes nav-expand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+
+.nav-tabs {
+    position: fixed;
+    top: -120%;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: top .6s ease-out;
+    z-index: 30;
+}
+
+.nav-tabs-show {
+    top: 0rem;
+}
+
+.nav-item-group {
+    text-align: center;
+}
+
+.nav-item {
+    margin: 1.5em 0;
+    transition: transform .25s ease-in;
+}
+
+.nav-link {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Carter one';
+    color: black;
+    transition: color .2s ease-in;
+}
+
+.nav-active {
+    color: #FFB100;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.nav-link-home:hover {
+    color: #FFB100;
+}
+
+.nav-link-subscription:hover {
+    color: #7313d3;
+
+}
+
+.nav-link-preset:hover {
+    color: #43A9DF;
+}
+
+.nav-link-custom:hover {
+    color: #FF3701;
+}
+
+.sign-out-btn {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-family: 'Carter One';
+    color: black;
+    cursor: pointer;
+}
+
+.sign-out-btn:hover {
+    color: #FFB100;
+}
+
+.nav-item-group-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-item-icons {
+    margin: 0 1.5em;
+    transition: transform .25s ease-in;
+}
+
+.nav-item-icons:hover {
+    transform: scale(1.2);
+}
+
+/*--------------navbar SECTION-------------*/
+/* ----------------small box animation----------------- */
+
+@keyframes small-box-animation {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+/* ----------------small box animation----------------- */
+
+/* ----------------footer----------------- */
+footer {
+    background-color: #FF4D00;
+    width: 100vw;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-content div {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .footer-content div {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .navbar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .nav-item-group .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-icon-group {
+        margin-right: 1.5rem;
+    }
+
+
+}
